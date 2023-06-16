@@ -22,7 +22,7 @@ def convert_pdb_to_sdf(input_file, output_file):
     dump_one(molecule, output_file)
 
 # load the trajectory
-u = mda.Universe("step5_input.pdb", "step6.6_equilibration.xtc")
+u = mda.Universe("step5_input.pdb", "traj.xtc")
 protein = u.select_atoms("protein")
 ligand = u.select_atoms("resname LIG")
 
